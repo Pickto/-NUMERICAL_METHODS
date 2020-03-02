@@ -7,24 +7,27 @@ using std::cout;
 int main()
 {
 	srand(time(NULL));
-	
-	CSLR matrix;
-	try
+	int size = 5000;
+
+	std::vector<std::vector<double>> A(size, std::vector<double>(size));
+
+	for (int i = 0; i < size; i++)
 	{
-		matrix.ReadFromBinFile("..\\ChM_PRACTICA_1\\Matrix2");
-	}
-	catch (std::exception& error)
-	{
-		cout << error.what();
+		A[i][i] = rand() / 100.0;
+
+		for (int j = 0; j < i; j++)
+		{
+			A[i][j] = rand() / 100.0;
+			A[j][i] = A[i][j];
+		}
 	}
 
-	std::vector<std::vector<double>> A;
-	A = matrix.ConvertToTightFormat();
+	CSLR matrix(A);
 
 	std::vector<double> x(matrix.get_size());
 
 	for (int i = 0; i < x.size(); i++)
-		x[i] = rand();
+		x[i] = rand() / 100.0;
 
 	std::chrono::steady_clock::time_point start, end;
 	std::chrono::duration<double> duration_cslr(0), duration_tight(0);
