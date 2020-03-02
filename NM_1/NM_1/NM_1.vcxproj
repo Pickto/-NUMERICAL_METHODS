@@ -20,10 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{C9DBABF7-461E-4235-9B44-3A6CFA548AAB}</ProjectGuid>
-    <RootNamespace>ChMPRACTICA1</RootNamespace>
+    <ProjectGuid>{CEA5A4FE-D153-4B71-8C93-DE263BF3B286}</ProjectGuid>
+    <RootNamespace>NM1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>NM_!</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -124,11 +123,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CSLR.cpp" />
-    <ClCompile Include="time.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="CSLR.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

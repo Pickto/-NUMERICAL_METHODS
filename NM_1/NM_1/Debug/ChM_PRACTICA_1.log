@@ -1,4 +1,0 @@
-﻿  time.cpp
-D:\c++\ChM_PRACTICA_1\ChM_PRACTICA_1\time.cpp(9,12): warning C4244:  аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-D:\c++\ChM_PRACTICA_1\ChM_PRACTICA_1\time.cpp(26,20): warning C4018:  <: несоответствие типов со знаком и без знака
-  ChM_PRACTICA_1.vcxproj -> D:\c++\ChM_PRACTICA_1\Debug\ChM_PRACTICA_1.exe
