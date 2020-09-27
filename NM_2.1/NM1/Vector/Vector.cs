@@ -83,7 +83,7 @@ namespace NM1
         }
 
         //норма вектора
-        public double Norma()
+        public double Norm()
         {
             double RES = 0.0;
 

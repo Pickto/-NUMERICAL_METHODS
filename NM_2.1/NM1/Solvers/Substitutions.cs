@@ -10,7 +10,7 @@ namespace NM1
         //прямая подстановка по строкам (А - нижняя треугольная матрица)
         public static Vector DirectRowSubstitution(Matrix A, Vector F)
         {
-            Vector RES = new Vector();
+            Vector RES = new Vector(F.N);
             //скопируем по значениям вектор F в RES
             RES.Copy(F);
             //проход по строкам
@@ -25,7 +25,7 @@ namespace NM1
         //прямая подстановка по столбцам (А - нижняя треугольная матрица)
         public static Vector DirectColumnSubstitution(Matrix A, Vector F)
         {
-            Vector RES = new Vector();
+            Vector RES = new Vector(F.N);
             //скопируем вектор F в RES
             RES.Copy(F);
             //проход по столбцам
@@ -40,7 +40,7 @@ namespace NM1
         //обратная подстановка по строкам (А - верхняя треугольная матрица)
         public static Vector BackRowSubstitution(Matrix A, Vector F)
         {
-            Vector RES = new Vector();
+            Vector RES = new Vector(F.N);
             //скопируем вектор F в RES
             RES.Copy(F);
             //начинаем с последней строки, двигаясь вверх
@@ -56,7 +56,7 @@ namespace NM1
         //обратная подстановка по столбцам (А - верхняя треугольная матрица)
         public static Vector BackColumnSubstitution(Matrix A, Vector F)
         {
-            Vector RES = new Vector();
+            Vector RES = new Vector(F.N);
             //скопируем вектор F в RES
             RES.Copy(F);
             //начинаем с последнего столбца, сдвигаясь влево
