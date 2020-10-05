@@ -6,6 +6,6 @@ namespace NM1
 {
     class CONSTS
     {
-        public static double EPS = 0.0000000000000001;
+        public static double EPS = 0.000001;
     }
 }
